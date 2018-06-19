@@ -41,7 +41,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;
   ~i.name.indexOf('NG_DEFER_BOOTSTRAP')|| // only load library if not running e2e tests
   m.parentNode.insertBefore(a,m)
-  })(window,document,'script','assets/js/analytics.js','ga');
+  })(window,document,'script','../angularCope/assets/js/analytics.js','ga');
   </script>
   <!-- End Google Analytics -->
 
@@ -109,12 +109,12 @@
 
     //load the ES5 shim for browsers with native CE support
     function loadCustomElementsShim(){
-      document.write('<scri' + 'pt src="assets/js/native-shim.js"><' + '/script>');
+      document.write('<scri' + 'pt src="../angularCope/assets/js/native-shim.js"><' + '/script>');
     }
 
     //load the full custom elements polyfill for browsers without support
     function loadCustomElementsPolyfill(){
-      document.write('<scri' + 'pt src="assets/js/custom-elements.min.js"><' + '/script>');
+      document.write('<scri' + 'pt src="../angularCope/assets/js/custom-elements.min.js"><' + '/script>');
     }
     //detect if we have native CE support
     if(!window.customElements){
@@ -125,7 +125,7 @@
     }
   </script>
 
-<link rel="stylesheet" href="./styles.613b7c8de73e274bd4c6.css"></head>
+<link rel="stylesheet" href="../angularCope/styles.613b7c8de73e274bd4c6.css"></head>
 <body>
 
   <aio-shell></aio-shell>
